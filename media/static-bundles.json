@@ -1660,6 +1660,19 @@
         "js/firefox/election.js"
       ],
       "name": "firefox_election"
+    },
+    {
+      "files": [
+        "js/libs/es6-promise.js",
+        "js/libs/split-10.6.1.js"
+      ],
+      "name": "split_io"
+    },
+    {
+      "files": [
+        "js/firefox/split-io-experiment.js"
+      ],
+      "name": "split_io_headline_experiment"
     }
   ]
 }

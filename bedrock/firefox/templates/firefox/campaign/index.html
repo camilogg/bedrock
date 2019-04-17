@@ -67,6 +67,11 @@
 </main>
 {% endblock %}
 
+{% block js %}
+  {{ js_bundle('split_io') }}
+  {{ js_bundle('split_io_headline_experiment') }}
+{% endblock %}
+
 {# Bug 1381776 #}
 {% block update_notification %}{% endblock %}
 

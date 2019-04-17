@@ -1419,6 +1419,8 @@ CSP_CHILD_SRC = [
 CSP_CONNECT_SRC = CSP_DEFAULT_SRC + [
     'www.googletagmanager.com',
     'www.google-analytics.com',
+    'sdk.split.io',
+    'events.split.io',
     FXA_ENDPOINT,
     FXA_ENDPOINT_MOZILLAONLINE,
 ]
@@ -1453,3 +1455,6 @@ if config('SWITCH_TRACKING_PIXEL', default=str(DEV), parser=bool):
 # FUNNELCAKE_103_LOCALES=de,fr,en-US
 #
 # where "103" in the variable name is the funnelcake ID.
+
+SPLIT_IO_API_KEY = config('SPLIT_IO_API_KEY', default=str('bvskrem9555h2i6jqd58gl5asq8us3rigrqa' if DEV else
+                                                          'fndketsb3jffkstl6j1mq4pgunld6bo7eo6r'))
